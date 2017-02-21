@@ -24,7 +24,6 @@ void draw()
     rects = myExpand();
     rects[number] = new rectangle();
     drawing = true;
-    println(rects.length);
   }
   if (drawing && mousePressed)
   {
