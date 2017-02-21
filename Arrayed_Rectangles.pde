@@ -13,6 +13,12 @@ void setup()
 void draw()
 {
   background(0);
+  if (rects.length == 1)
+  {
+    fill(255);
+    textSize(15);
+    text("Click and dragg to draw rectangles", width / 3, height /2);
+  }
   if (mousePressed && !drawing)
   {
     rects = myExpand();
